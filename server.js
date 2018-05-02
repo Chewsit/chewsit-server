@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}!`));
- 
+
 
 //Changed open now to false to test categories after hours 
 app.get('/api/yelp/v3/:food/:location/:price/:range/:offset', (req, res) => {
